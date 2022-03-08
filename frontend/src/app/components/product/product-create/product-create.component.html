@@ -1,0 +1,18 @@
+<mat-card>
+<form action="">
+    <mat-form-field>
+        <input MatInput placeholder="name" name="name"[(ngModel)]="pacotes.name">
+    </mat-form-field>
+    <mat-form-field>
+        <input MatInput placeholder="preço(R$)" name="price" [(ngModel)]="pacotes.price">
+    </mat-form-field>
+</form>
+    
+<button mat-raised-button (click)="salvar()">
+    Salvar
+</button>
+
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+</mat-card>
